@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/serviceRegistry/pom.xml" />
         <option value="$PROJECT_DIR$/ingredient-service/pom.xml" />
         <option value="$PROJECT_DIR$/ingredient-client/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
       </list>
     </option>
   </component>
