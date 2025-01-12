@@ -1,0 +1,48 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    secure-virtual-host-name:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false
+---
+spring:
+  config:
+    activate:
+      on-profile: eureka-1
+  application:
+    name: eureka-1
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: eureka1.pizzahot.com
+
+---
+spring:
+  config:
+    activate:
+      on-profile: eureka-2
+  application:
+    name: eureka-2
+
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: eureka2.pizzahot.com
+
+other:
+  eureka:
+    host: localhost
+    port: 8762
