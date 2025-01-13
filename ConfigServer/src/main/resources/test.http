@@ -3,5 +3,8 @@ GET http://localhost:8888/ingredient-service/default
 GET http://localhost:8888/application/default
 ###
 POST http://localhost:8888/encrypt
+Content-Type: application/x-www-form-urlencoded
+
+password
 
 

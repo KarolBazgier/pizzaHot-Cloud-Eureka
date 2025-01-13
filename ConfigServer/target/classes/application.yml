@@ -4,8 +4,10 @@ spring:
       server:
         git:
           uri: https://github.com/KarolBazgier/pizzaHot-config.git
-          search-paths: ingredient-service
           clone-on-start: true
 
 server:
   port: 8888
+
+encrypt:
+  key: s3cr3t

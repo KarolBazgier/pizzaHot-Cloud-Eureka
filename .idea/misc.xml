@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/ingredient-service/pom.xml" />
         <option value="$PROJECT_DIR$/ingredient-client/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/serviceRegistryEureka/pom.xml" />
       </list>
     </option>
   </component>

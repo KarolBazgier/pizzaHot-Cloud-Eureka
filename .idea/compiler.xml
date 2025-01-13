@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="serviceRegistry" />
+        <module name="serviceRegistryEureka" />
         <module name="ingredient-client" />
         <module name="ConfigServer" />
+        <module name="serviceRegistry" />
       </profile>
       <profile name="Annotation profile for ingredient-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -21,6 +22,9 @@
         <module name="ingredient-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="serviceRegistry" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -28,6 +32,7 @@
       <module name="ingredient-client" options="-parameters" />
       <module name="ingredient-service" options="-parameters" />
       <module name="serviceRegistry" options="-parameters" />
+      <module name="serviceRegistryEureka" options="-parameters" />
     </option>
   </component>
 </project>
