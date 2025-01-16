@@ -4,12 +4,12 @@ GET http://localhost:8888/ingredient-service/default
 GET http://localhost:8888/v1/default
 X-Config-Token: roottoken
 ###
-POST http://localhost:8888/encrypt
-Content-Type: application/x-www-form-urlencoded
-
-password
-
-
-###
-GET http://localhost:8200/v1/secret/ingredient-service
-X-Vault-Token: roottoken
+#POST http://localhost:8888/encrypt
+#Content-Type: application/x-www-form-urlencoded
+#
+#password
+#
+#
+####
+#GET http://localhost:8200/v1/secret/ingredient-service
+#X-Vault-Token: roottoken

@@ -19,7 +19,11 @@ public class RestTemplateConfig {
     public WebClient.Builder webClientBuilder() {
         return WebClient.builder();
     }
-
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
     @Bean
     public CommandLineRunner startUp() {
         return args -> {

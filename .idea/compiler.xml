@@ -21,10 +21,14 @@
         <module name="ingredient-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="greetings" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ConfigServer" options="-parameters" />
+      <module name="greetings" options="-parameters" />
       <module name="ingredient-client" options="-parameters" />
       <module name="ingredient-service" options="-parameters" />
       <module name="serviceRegistry" options="-parameters" />

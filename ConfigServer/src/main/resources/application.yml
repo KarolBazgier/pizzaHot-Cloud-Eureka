@@ -1,41 +1,23 @@
-#
-#spring:
-#  profiles:
-#    active:
-#      - vault
-#      - git
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: https://github.com/KarolBazgier/pizzaHot-config.git
-#          order: 2
-#        vault:
-#          host: localhost
-#          port: 8200
-#          order: 1
-#          scheme: https
-#          token: roottoken
-#
+
 spring:
   profiles:
     active:
-      - vault
+#      - vault
       - git
   cloud:
     config:
       server:
-        vault:
-          host: localhost
-          port: 8200
-          scheme: http
-          token: roottoken
-          kv-version: 1
-          backend: secret
-          order: 1
+#        vault:
+#          host: localhost
+#          port: 8200
+#          scheme: http
+#          token: roottoken
+#          kv-version: 1
+#          backend: secret
+#          order: 1
         git:
           uri: https://github.com/KarolBazgier/pizzaHot-config.git
-          order: 2
+#          order: 2
 server:
   port: 8888
 
