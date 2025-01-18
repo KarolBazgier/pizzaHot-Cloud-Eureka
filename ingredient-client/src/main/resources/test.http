@@ -1,1 +1,26 @@
+### wywołanie metody z wyjątkiem circuitbrake
+GET http://localhost:8080/resilience
+
+### wywołania info n.t circuitbrakes, wyjatków
 GET http://localhost:8080/actuator/circuitbreakers
+
+### informacje zadeklarowane w application.yml
+GET http://localhost:8080/actuator/info
+
+### monitorowanie wątków
+GET http://localhost:8080/actuator/threaddump
+
+### httptrace usuniete od Spring 3.x +, w zamian htttpexchanges + wywolanie error:404
+GET http://localhost:8080/actuator/httptrace
+
+### monitorowanie żądań
+GET http://localhost:8080/actuator/httpexchanges
+
+### dane statystyczne generowane przez api, ogólne
+GET http://localhost:8080/actuator/metrics
+
+### dane statystyczne generowane przez api, szczegółowe na temat wybranego
+GET http://localhost:8080/actuator/metrics/http.server.requests
+
+### dane statystyczne generowane przez api, szczegółowe na temat liczby zadan, ktore wywolaly error:404
+GET http://localhost:8080/actuator/metrics/http.server.requests?tag=status:404&tag=uri:/**

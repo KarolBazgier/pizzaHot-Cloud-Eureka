@@ -18,10 +18,27 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, metrics, circuitbreakers, circuitbreakerevents
+        include: health, metrics, circuitbreakers, circuitbreakerevents,beans,info,threaddump,httptrace,httpexchanges
   health:
     circuitbreakers:
       enabled: true
   metrics:
     enable:
       all: true
+  info:
+    env:
+      enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+
+
+info:
+  contact:
+    email: support@pizzacloud.com
+    phone: 12-123-21-21
+
+
+logging:
+  level:
+    io.github.resilience4j: DEBUG
