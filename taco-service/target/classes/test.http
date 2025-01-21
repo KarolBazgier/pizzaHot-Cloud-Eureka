@@ -1,0 +1,2 @@
+### informacje zadeklarowane w InfoContributor
+GET http://localhost:8082/actuator/info

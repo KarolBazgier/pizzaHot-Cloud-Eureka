@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
         <option value="$PROJECT_DIR$/serviceRegistryEureka/pom.xml" />
         <option value="$PROJECT_DIR$/greetings/pom.xml" />
+        <option value="$PROJECT_DIR$/taco-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

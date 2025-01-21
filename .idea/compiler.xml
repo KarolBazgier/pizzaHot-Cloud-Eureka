@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ingredient-client" />
         <module name="ConfigServer" />
+        <module name="taco-service" />
         <module name="serviceRegistry" />
       </profile>
       <profile name="Annotation profile for ingredient-service" enabled="true">
@@ -32,6 +33,7 @@
       <module name="ingredient-client" options="-parameters" />
       <module name="ingredient-service" options="-parameters" />
       <module name="serviceRegistry" options="-parameters" />
+      <module name="taco-service" options="-parameters" />
     </option>
   </component>
 </project>

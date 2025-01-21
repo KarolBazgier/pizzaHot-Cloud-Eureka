@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: pizza-service
+  config:
+    import: "configserver:http://localhost:8888"
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/karol:<Pa%24%24word%40123>@cluster0.hdt2i.mongodb.net/admin
+      database: admin
+  security:
+    user:
+      name: karol
+      password: p@ssword
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: threaddump, heapdump
+  endpoint:
+    health:
+      show-details: always
+  info:
+    git:
+      mode: full
+      enabled: true
